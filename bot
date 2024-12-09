@@ -47,6 +47,10 @@ async def on_message(message):
     elif message.content.startswith("*emoji"):
          await message.channel.send("Aqui tienes un emoji:" + gen_emoji())
 
+     elif message.content.startswith("el bot es cool?"):
+         await message.channel.send("si , el bot es cool")
+         
+
     else:
          await message.channel.send(message.content)
 
